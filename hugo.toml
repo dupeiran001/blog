@@ -1,0 +1,4 @@
+baseURL = 'https://haruhi.space/'
+languageCode = 'en-us'
+title = 'My Blog Site'
+theme = 'ananke'
