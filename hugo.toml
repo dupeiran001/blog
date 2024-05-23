@@ -4,6 +4,10 @@ languageCode = 'en-us'
 theme = "hello-friend-ng"
 paginate = 10
 
+PygmentsCodeFences = true
+PygmentsStyle = "nord"
+
+
 [params]
 dateform = "Jan 2, 2006"
 dateformShort = "Jan 2"
@@ -34,7 +38,7 @@ series = "series"
 
 [languages]
 [languages.en]
-title = "Hello Friend NG"
+title = "Welcome to My Homepage"
 copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [languages.en.params]
