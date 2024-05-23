@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://haruhi.space/categories/</loc>
+    <loc>http://localhost:1313/blog/posts/first_post/</loc>
+    <lastmod>2023-12-21T17:35:08+08:00</lastmod>
   </url><url>
-    <loc>https://haruhi.space/</loc>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2023-12-21T17:35:08+08:00</lastmod>
   </url><url>
-    <loc>https://haruhi.space/tags/</loc>
+    <loc>http://localhost:1313/blog/posts/</loc>
+    <lastmod>2023-12-21T17:35:08+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/series/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/tags/</loc>
   </url>
 </urlset>

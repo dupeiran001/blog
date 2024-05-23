@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/dpr/Develop/blog",
+	"sourceRoot": "/Users/dpr/Documents/blog",
 	"sources": [
 		"ananke/css/main.css"
 	],
