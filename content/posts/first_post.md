@@ -14,6 +14,22 @@ Visit the [Hugo](https://gohugo.io) website!
 ```rust
 fn main(){
   eprintln!("{}", "hello world");
+
+  let a = 1;
+
+  println!("{}", b(a));
+
+
+}
+
+fn b(a: i32) -> i32{
+  let (tx, rx) = std::sync::mpsc::channel();
+  std::thread::spawn(move || {
+    let b = a + 1;
+    tx.send(b).unwrap();
+  });
+
+  return rx.receive().unwrap();
 }
 ```
 
@@ -25,4 +41,5 @@ fn main(){
 > cite
 
 ### title
+
 
