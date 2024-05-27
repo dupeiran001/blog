@@ -184,15 +184,15 @@ logoCursorPathname = true
 # Utteranc.es is a lightweight comments widget built on GitHub issues.
 # See https://utteranc.es/ for documentation
 # Uncomment this to enable Utteranc.es.
-#
-# [params.utterances]
+
+[params.utterances]
 #   Your GitHub repository
 #
-#   repository = ""
+repository = "dupeiran001/blog"
 #
 #   label used for GitHub issues
 #
-#   label      = ""
+label = "comment"
 # 
 #   Blog Post <-> Issue mapping. This parameter is optional. Possible values are:
 #      - pathname
@@ -202,7 +202,7 @@ logoCursorPathname = true
 #      - issue number
 #      - specific term
 #
-#   issueTerm  = ""
+issueTerm = "url"
 #
 #   Theme used: possible values are:
 #      - github-light
@@ -215,7 +215,8 @@ logoCursorPathname = true
 #      - boxy-light
 #      - gruvbox-dark
 #
-#   theme      = ""
+themeDark = "github-dark"
+themeLight = "github-light"
 #
 
 
