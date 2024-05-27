@@ -233,6 +233,10 @@ url = "dupeiran3@gmail.com"
 name = "github"
 url = "https://github.com/dupeiran001"
 
+[[params.social]]
+name = "orcid"
+url = "https://orcid.org/0009-0008-8731-3478"
+
 # [[params.social]]
 # name = "linkedin"
 # url = "https://www.linkedin.com/"
@@ -265,3 +269,8 @@ url = "posts/"
 identifier = "about"
 name = "About"
 url = "about/"
+
+[[menu.main]]
+identifier = "publications"
+name = "Publications"
+url = "publications/"
