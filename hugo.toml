@@ -229,7 +229,7 @@ logoCursorPathname = true
 
 [[params.social]]
 name = "email"
-url = "dupeiran3@gmail.com"
+url = "mailto:dupeiran3@gmail.com"
 
 [[params.social]]
 name = "github"
