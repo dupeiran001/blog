@@ -49,6 +49,8 @@ series = "series"
 
 [params]
 
+themeColorLight = "#81A1C1"
+themeColorDark = "#637B94"
 
 dateform = "Jan 2, 2006"
 dateformShort = "Jan 2"
