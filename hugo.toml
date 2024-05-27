@@ -1,35 +1,110 @@
-baseURL = 'https://dupeiran001.github.io/blog/'
+baseURL = 'https://dupeiran001.github.io/blog'
 title = "My Blog"
 languageCode = 'en-us'
 theme = "hello-friend-ng"
-paginate = 10
 
 PygmentsCodeFences = true
 PygmentsStyle = "nord"
 
+paginate = 10
+rssLimit = 10            # Maximum number of items in the RSS feed.
+copyright = "Apache 2.0" # This message is only used by the RSS template.
+
+
+archetypeDir = "archetypes"
+contentDir = "content"
+dataDir = "data"
+layoutDir = "layouts"
+publishDir = "public"
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+canonifyURLs = false
+
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+enableMissingTranslationPlaceholders = true
+disableRSS = false
+disableSitemap = false
+disable404 = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+posts = "/posts/:year/:month/:title/"
+
+[blackfriday]
+hrefTargetBlank = true
 
 [params]
+
+
 dateform = "Jan 2, 2006"
 dateformShort = "Jan 2"
 dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
 
-# Subtitle for home
-homeSubtitle = "Homepage"
+# Metadata mostly used in document's head
+# 
+description = "this is my homepage, and my blog"
+keywords = "blog, homepage"
+images = [""]
+
+# Home subtitle of the index page.
+#
+homeSubtitle = "Peiran Du"
+
+# Set a background for the homepage
+# backgroundImage = "assets/images/background.jpg"
+
+# Prefix of link to the git commit detail page. GitInfo must be enabled.
+#
+gitUrl = "https://github.com/dupeiran001/blog/commit/"
 
 # Set disableReadOtherPosts to true in order to hide the links to other posts.
+#
 disableReadOtherPosts = false
 
-# Enable sharing buttons, if you like
+# Enable theme toggle
+# 
+# This options enables the theme toggle for the theme. 
+# Per default, this option is off. 
+# The theme is respecting the prefers-color-scheme of the operating system. 
+# With this option on, the page user is able to set the scheme he wants. 
+enableThemeToggle = true
+
+# Sharing buttons
+#
+# There are a lot of buttons preconfigured. If you want to change them,
+# generate the buttons here: https://sharingbuttons.io
+# and add them into your own `layouts/partials/sharing-buttons.html`
+#
 enableSharingButtons = true
 
-# Show a global language switcher in the navigation bar
-enableGlobalLanguageMenu = true
+# Global language menu
+#
+# Enables the global language menu.
+#
+enableGlobalLanguageMenu = false
 
-# Metadata mostly used in document's head
-description = "My homepage"
-keywords = "homepage, blog"
-images = [""]
+# Integrate Javascript files or stylesheets by adding the url to the external assets or by
+# linking local files with their path relative to the static folder, e.g. "css/styles.css"
+#
+customCSS = []
+customJS = []
+
+# Toggle this option need to rebuild SCSS, requires extended version of Hugo
+#
+justifyContent = false # Set "text-align: justify" to .post-content.
+
+# Integrate Plausible.io
+# plausibleDataDomain = 'test.com'
+# plausibleScriptSource = 'https://plausible.io/js/script.js'
+
 
 [taxonomies]
 category = "blog"
