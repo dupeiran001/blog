@@ -8,8 +8,6 @@ tags:
   - kernel
 ---
 
-# How to Debug Linux Kernel (with `qemu` & `busybox`)
-
 ## Outline
 
 - clone `linux` source code
@@ -99,6 +97,10 @@ make install
 
 ```bash
 #!/bin/sh 
+
+mkdir /proc
+mkdir /sys
+
 mount -t proc proc /proc
 mount -t sysfs sysfs /sys
 mount -t devtmpfs devtmpfs /dev 
@@ -124,4 +126,30 @@ sudo apt install qemu-kvm
 
 ```bash
 qemu-system-x86_64 -nographic --append "console=ttyS0" -kernel ./vmlinux -initrd ../busybox/ramdisk.img
+```
+
+## Other Configs
+
+- before doing other configs, you may need to use default config
+- copy example `inittab` file
+
+```bash
+mkdir busybox/_install/etc
+cp busybox/example/inittab busybox/_install/etc/inittab
+```
+
+**remember to regenerate ramdisk after any modification done to files in this folder**
+
+### tty not available keep scrolling
+
+- comment these lines in `etc/inittab`
+
+```inittab
+tty2::askfirst:-/bin/sh
+tty3::askfirst:-/bin/sh
+tty4::askfirst:-/bin/sh
+
+# /sbin/getty invocations for selected ttys
+tty4::respawn:/sbin/getty 38400 tty5
+tty5::respawn:/sbin/getty 38400 tty6
 ```
