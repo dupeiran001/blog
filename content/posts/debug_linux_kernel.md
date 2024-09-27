@@ -17,6 +17,7 @@ tags:
 - install `qemu`
 - boot kernel by `qemu` attached with user space from `busybox`
 - other configurations
+- Reference
 
 ## Prepare Linux src
 
@@ -153,3 +154,10 @@ tty4::askfirst:-/bin/sh
 tty4::respawn:/sbin/getty 38400 tty5
 tty5::respawn:/sbin/getty 38400 tty6
 ```
+
+## Reference
+
+- a [useful blog](https://coderjoshdk.github.io/posts/Rust-Kernel-Programming.html)
+- another [useful blog](https://gist.github.com/chrisdone/02e165a0004be33734ac2334f215380e)
+- [kernel docs](https://www.kernel.org/doc/html/next/index.html)
+- [video tutorial](https://www.youtube.com/watch?v=tPs1uRqOnlk)
