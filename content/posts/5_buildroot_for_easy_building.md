@@ -15,7 +15,7 @@ tags:
 
 ## Introduction
 
-as in [Debug Linux Kernel](./debug_linux_kernel.md), we used `busybox` for building root fs, which need many customization to work properly.
+as in [Debug Linux Kernel](./2_debug_linux_kernel.md), we used `busybox` for building root fs, which need many customization to work properly.
 Here, we're going to use `buildroot` to generate the rootfs for us, instead of compile `busybox` by ourselves
 
 ## Build `Buildroot`

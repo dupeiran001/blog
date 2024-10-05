@@ -39,7 +39,7 @@ that are **readable** and **writeable**
 ### Development workflow
 
 - do some change to kernel src
-- boot with `qemu` with `busybox`, resources can be found [Debug Linux Kernel](./debug_linux_kernel.md) & [Rust for Linux](./rust_for_linux.md)
+- boot with `qemu` with `busybox`, resources can be found [Debug Linux Kernel](./2_debug_linux_kernel.md) & [Rust for Linux](./3_rust_for_linux.md)
 - and debug it through remote `gdb`
 
 ## Add a New Module

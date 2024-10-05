@@ -9,7 +9,7 @@ tags:
   - rust
 ---
 
-**please check previous post [Debug Linux Kernel](./debug_linux_kernel.md), make sure you know how to debug linux kernel before starting trying to use rust for linux kernel**
+**please check previous post [Debug Linux Kernel](./2_debug_linux_kernel.md), make sure you know how to debug linux kernel before starting trying to use rust for linux kernel**
 
 other details are documented in `linux/Documentation/rust/quick-start.rst`
 
