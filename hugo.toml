@@ -1,12 +1,11 @@
 baseURL = 'https://dupeiran001.github.io/blog'
 title = "My Blog"
-languageCode = 'en-us'
+locale = 'en-US'
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
 PygmentsStyle = "nord"
 
-paginate = 10
 rssLimit = 10            # Maximum number of items in the RSS feed.
 copyright = "Apache 2.0" # This message is only used by the RSS template.
 
@@ -33,6 +32,9 @@ disableRSS = false
 disableSitemap = false
 disable404 = false
 disableHugoGeneratorInject = false
+
+[pagination]
+pagerSize = 10
 
 [permalinks]
 posts = "/posts/:year/:month/:title/"
